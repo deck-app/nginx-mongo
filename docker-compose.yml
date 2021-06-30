@@ -16,7 +16,7 @@ services:
   mongoclient:
     image: mongoclient/mongoclient:latest
     ports:
-      3300:3000
+      - "3300:3000"
   mongo:
     build: "./mongo"
     ports:
