@@ -13,7 +13,10 @@ services:
       - "${APP_CODE_PATH_HOST}:${APP_CODE_PATH_NGINX}${APP_CODE_CONTAINER_FLAG}"
     ports:
       - "${NGINX_HOST_HTTP_PORT}:80"
-
+  mongoclient:
+    image: mongoclient/mongoclient:latest
+    ports:
+      3300:3000
   mongo:
     build: "./mongo"
     ports:
