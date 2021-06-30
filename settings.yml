@@ -70,5 +70,4 @@ system:
   ports:
     http:
       NGINX_HOST_HTTP_PORT
-    others:
-      MONGODB_PORT
+
